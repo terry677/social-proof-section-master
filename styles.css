@@ -1,0 +1,209 @@
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                            font-family: 'League Spartan', sans-serif;
+                        }
+                        
+                         :root {
+                            --Very-Dark-Magenta: hsl(300, 43%, 22%);
+                            --Soft-Pink: hsl(333, 80%, 67%);
+                            --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+                            --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+                            --White: hsl(0, 0%, 100%);
+                        }
+                        
+                        main {
+                            width: 100%;
+                            max-width: 1450px;
+                            margin: auto;
+                            min-height: 100vh;
+                            background-color: var(--White);
+                            background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg");
+                            background-repeat: no-repeat, no-repeat;
+                            background-position: left top, right bottom;
+                            padding: 5rem 10rem;
+                            overflow: hidden;
+                        }
+                        
+                        main .top-part {
+                            display: flex;
+                            width: 100%;
+                            gap: 4rem;
+                        }
+                        
+                        main .top-part .heading {
+                            width: 40%;
+                        }
+                        
+                        main h1 {
+                            font-size: 3rem;
+                            color: var(--Very-Dark-Magenta);
+                        }
+                        
+                        main .heading p {
+                            margin-top: 2rem;
+                            font-size: 15px;
+                            color: var(--Dark-Grayish-Magenta);
+                            line-height: 1.2;
+                        }
+                        
+                        .rating-div-1,
+                        .rating-div-2,
+                        .rating-div-3 {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            background-color: var(--Light-Grayish-Magenta);
+                            padding: 1rem;
+                            border-radius: 5px;
+                            margin-bottom: 1rem;
+                            width: 100%;
+                        }
+                        
+                        .rating-div-2 {
+                            margin-left: 4rem;
+                        }
+                        
+                        .rating-div-3 {
+                            margin-left: 8rem
+                        }
+                        
+                        .rating-reviews h4 {
+                            color: var(--Very-Dark-Magenta);
+                            font-weight: 500;
+                        }
+                        
+                        .bottom-part {
+                            display: flex;
+                            align-items: center;
+                            gap: 2rem;
+                            margin-top: 3rem;
+                        }
+                        
+                        .bottom-part>.card-1,
+                        .card-2,
+                        .card-3 {
+                            background-color: var(--Very-Dark-Magenta);
+                            padding: 2rem;
+                            border-radius: 10px;
+                        }
+                        
+                        .card-2 {
+                            margin-top: 2rem;
+                        }
+                        
+                        .card-3 {
+                            margin-top: 4rem;
+                        }
+                        
+                        .card-name {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        
+                        .card-name p {
+                            color: var(--White);
+                            align-items: center;
+                            text-align: center;
+                            line-height: 1.5;
+                        }
+                        
+                        .card-name span {
+                            color: var(--Soft-Pink);
+                        }
+                        
+                        .card-title {
+                            display: flex;
+                            align-items: center;
+                            gap: 2rem;
+                            font-size: 15px;
+                            margin-bottom: 1rem;
+                        }
+                        
+                        .card-img {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            overflow: hidden;
+                        }
+                        
+                        .card-img img {
+                            width: 3rem;
+                        }
+                        
+                        .comment {
+                            color: white;
+                            line-height: 1.5;
+                        }
+                        
+                        @media (max-width:820px) {
+                            main {
+                                width: 100%;
+                                margin: auto;
+                                min-height: 100vh;
+                                background-color: var(--White);
+                                background-image: url("/images/bg-pattern-top-mobile.svg"), url("/images/bg-pattern-bottom-desktop.svg");
+                                background-repeat: no-repeat, no-repeat;
+                                background-position: left top, right bottom;
+                                padding: 1rem;
+                                overflow: none;
+                            }
+                            main .top-part {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                gap: 1rem;
+                            }
+                            main .top-part .heading {
+                                width: 100%;
+                            }
+                            main h1 {
+                                font-size: 2rem;
+                                color: var(--Very-Dark-Magenta);
+                                font-weight: 700;
+                                text-align: center;
+                            }
+                            .ratings {
+                                width: 100%;
+                            }
+                            .rating-div-2 {
+                                margin-left: 0;
+                            }
+                            .rating-div-3 {
+                                margin-left: 0;
+                            }
+                            .rating-div-1,
+                            .rating-div-2,
+                            .rating-div-3 {
+                                flex-direction: column;
+                                line-height: 1.5;
+                            }
+                            .bottom-part {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 2rem;
+                                margin-top: 3rem;
+                            }
+                            main .heading p {
+                                margin-top: 3rem;
+                                margin-bottom: 3rem;
+                                font-size: 15px;
+                                color: var(--Dark-Grayish-Magenta);
+                                line-height: 1.5;
+                                font-weight: 400;
+                                text-align: center;
+                            }
+                            .bottom-part>.card-1,
+                            .card-2,
+                            .card-3 {
+                                background-color: var(--Very-Dark-Magenta);
+                                padding: 2rem;
+                                border-radius: 10px;
+                                width: 100%;
+                            }
+                        }
